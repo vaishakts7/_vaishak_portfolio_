@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Vaishak T S — React Frontend Developer</title>
+<title>Vaishak T S — Full Stack Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -155,6 +155,17 @@
   .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.65s ease, transform 0.65s ease; }
   .reveal.visible { opacity:1; transform:translateY(0); }
 
+  /* Academics Section */
+  #education { background:var(--surface); }
+  .education-content { display:flex; flex-direction:column; gap:1.2rem; max-width:700px; margin-top:2rem; }
+  .education-card { display:flex; align-items:flex-start; gap:1.5rem; border:1px solid var(--border); border-radius:14px; padding:1.8rem 2rem; background:var(--glass); transition:border-color 0.2s, transform 0.2s; }
+  .education-card:hover { border-color:var(--cyan-mid); transform:translateY(-2px); }
+  .edu-icon { width:52px; height:52px; border-radius:10px; flex-shrink:0; background:var(--cyan-dim); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:1.5rem; }
+  .edu-details h3 { font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:600; margin-bottom:0.3rem; }
+  .edu-institution { color:var(--slate); font-size:0.9rem; margin-bottom:0.4rem; }
+  .edu-score { font-family:'JetBrains Mono',monospace; font-size:0.85rem; color:var(--muted); }
+  .edu-score strong { color:var(--cyan); }
+
  @media (max-width: 768px) {
 
     /* Navbar */
@@ -269,8 +280,18 @@
 
     .project-card,
     .exp-card,
-    .edu-card{
+    .edu-card,
+    .education-card{
         padding:1.5rem;
+    }
+
+    .education-content{
+        gap:1rem;
+    }
+
+    .education-card{
+        flex-direction:column;
+        gap:1rem;
     }
 
     .resume-banner{
@@ -349,10 +370,11 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+             <li><a href="#education">Academics</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <a href="./Vaishak_T_S_Resume.pdf"
+        <a href="./Vaishak_Updated_Resume.pdf"
            target="_blank"
            download
            class="nav-resume-btn">
@@ -375,16 +397,16 @@
     <div class="hero-jsx">
       <span class="jsx-tag">&lt;Developer</span>
       <span class="jsx-prop"> role</span>=<span class="jsx-str">"Frontend"</span>
-      <span class="jsx-prop"> stack</span>=<span class="jsx-str">"React JS"</span>
+      <span class="jsx-prop"> stack</span>=<span class="jsx-str">"MERN"</span>
       <span class="jsx-tag">&gt;</span>
     </div>
     <h1 class="hero-name">Vaishak<br/><span>T&nbsp;S</span></h1>
-    <p class="hero-role">React Frontend Developer · 2.5+ Years</p>
+    <p class="hero-role">Full Stack Developer · MERN Stack · 3 Years</p>
     <div class="hero-close"><span class="jsx-tag">&lt;/Developer&gt;</span></div>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View Projects</a>
       <a href="#contact" class="btn-ghost">Get in Touch</a>
-      <a href="./Vaishak_T_S_Resume.pdf" target="_blank" download class="btn-resume"   >
+      <a href="./Vaishak_Updated_Resume.pdf" target="_blank" download class="btn-resume"   >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
       </a>
@@ -395,27 +417,29 @@
 <section id="about">
   <div class="about-grid">
     <div class="about-text reveal">
-      <h2 class="section-title">Building interfaces <span>that work</span></h2>
-      <p>I'm a React Frontend Developer with 2.5+ years of experience crafting responsive, production-grade web applications. I specialise in component-based architecture, state management, and squeezing every bit of UI performance out of React.</p>
-      <p>Currently at <strong style="color:var(--white)">Techversant InfoTech</strong>, I translate designs into reusable components, integrate REST APIs, and work in tight Agile loops with cross-functional teams to ship features on schedule.</p>
+      <h2 class="section-title">Building end-to-end <span>solutions</span></h2>
+      <p>I'm a Full Stack Developer with 3 years of experience building production-grade web applications using the MERN stack. I specialize in crafting responsive React frontends and designing robust Node.js backends that scale.</p>
+      <p>Currently at <strong style="color:var(--white)">Techversant InfoTech</strong>, I build full-stack features end-to-end — from reusable React components to REST API endpoints, database schemas, and deployment pipelines.</p>
       <p>I also leverage AI development tools — Claude, ChatGPT/Codex — to accelerate debugging and code review, keeping turnaround times fast without sacrificing quality.</p>
     </div>
     <div class="about-stats reveal">
-      <div class="stat-card"><div class="stat-num">2.5+</div><div class="stat-desc">Years of production React experience</div></div>
+      <div class="stat-card"><div class="stat-num">3</div><div class="stat-desc">Years of full-stack MERN experience</div></div>
       <div class="stat-card"><div class="stat-num">86.4%</div><div class="stat-desc">B.E. Computer Science score</div></div>
-      <div class="stat-card"><div class="stat-num">2</div><div class="stat-desc">Major full-stack projects shipped</div></div>
+      <div class="stat-card"><div class="stat-num">2</div><div class="stat-desc">End-to-end apps built & shipped</div></div>
       <div class="stat-card"><div class="stat-num">4+</div><div class="stat-desc">AI dev tools integrated into workflow</div></div>
     </div>
   </div>
 </section>
 
+
+
 <section id="skills">
   <div class="reveal"><h2 class="section-title">Tech <span>Stack</span></h2></div>
   <div class="skills-grid reveal">
     <div class="skill-cat"><div class="skill-cat-title">Languages</div><div class="skill-tags"><span class="skill-tag">JavaScript </span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">SQL</span></div></div>
-    <div class="skill-cat"><div class="skill-cat-title">Frontend</div><div class="skill-tags"><span class="skill-tag">React.JS</span><span class="skill-tag">React Hooks</span><span class="skill-tag">Context API</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Bootstrap</span><span class="skill-tag">Responsive Design</span></div></div>
-    <div class="skill-cat"><div class="skill-cat-title">Backend / API</div><div class="skill-tags"><span class="skill-tag">REST APIs</span><span class="skill-tag">Node.js</span><span class="skill-tag">Postman</span><span class="skill-tag">Mongo DB</span></div></div>
-    <div class="skill-cat"><div class="skill-cat-title">Tools & Practices</div><div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">GitLab</span><span class="skill-tag">VS Code</span><span class="skill-tag">JIRA</span><span class="skill-tag">Agile / Scrum</span></div></div>
+    <div class="skill-cat"><div class="skill-cat-title">Frontend</div><div class="skill-tags"><span class="skill-tag">React.JS</span><span class="skill-tag">React Hooks</span><span class="skill-tag">React Redux</span><span class="skill-tag">Redux Toolkit</span><span class="skill-tag">Context API</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Bootstrap</span><span class="skill-tag">Responsive Design</span></div></div>
+    <div class="skill-cat"><div class="skill-cat-title">Backend / API</div><div class="skill-tags"><span class="skill-tag">REST APIs</span><span class="skill-tag">Node.js</span><span class="skill-tag">Express.js</span><span class="skill-tag">Postman</span><span class="skill-tag">MongoDB</span><span class="skill-tag">PostgreSQL</span></div></div>
+    <div class="skill-cat"><div class="skill-cat-title">Tools & Practices</div><div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">GitLab</span><span class="skill-tag">Docker</span><span class="skill-tag">VS Code</span><span class="skill-tag">JIRA</span><span class="skill-tag">MS Excel</span><span class="skill-tag">Agile / Scrum</span></div></div>
     <div class="skill-cat"><div class="skill-cat-title">AI Dev Tools</div><div class="skill-tags"><span class="skill-tag">Claude</span><span class="skill-tag">ChatGPT</span><span class="skill-tag">Codex</span><span class="skill-tag">Google Antigravity</span><span class="skill-tag">Google Gemini</span><span class="skill-tag">MicroSoft Copilot</span></div></div>
     <div class="skill-cat"><div class="skill-cat-title">Optimisation</div><div class="skill-tags"><span class="skill-tag">Memoization</span><span class="skill-tag">Code Splitting</span><span class="skill-tag">Lazy Loading</span><span class="skill-tag">Common Components</span></div></div>
   </div>
@@ -425,15 +449,15 @@
   <div class="reveal"><h2 class="section-title">Work <span>Experience</span></h2></div>
   <div class="exp-card reveal">
     <div class="exp-header">
-      <div><div class="exp-role">Associate Software Engineer — React JS Developer</div><div class="exp-company">Techversant InfoTech</div></div>
+      <div><div class="exp-role">Associate Software Engineer — Full Stack Developer</div><div class="exp-company">Techversant InfoTech</div></div>
       <div class="exp-date">Jan 2024 – Present</div>
     </div>
     <ul class="exp-bullets">
-      <li>Built and maintained responsive, cross-browser React.js applications — translating UI/UX designs into reusable component libraries used across multiple product modules.</li>
-      <li>Integrated RESTful APIs to drive dynamic frontend–backend communication, supporting real-time data updates across core application features.</li>
-      <li>Optimised UI rendering and load performance through memoization, code-splitting, and lazy loading — reducing unnecessary re-renders and improving perceived page load speed.</li>
+      <li>Built and maintained full-stack features end-to-end using React.js and Node.js — from interactive UIs to REST API development and database integration.</li>
+      <li>Designed and integrated RESTful APIs powering dynamic frontend–backend communication, supporting real-time data updates across core application features.</li>
+      <li>Implemented database schemas and queries in MongoDB, ensuring efficient data modelling for complex application workflows.</li>
+      <li>Optimised both frontend rendering (memoization, code-splitting, lazy loading) and backend performance for a smoother user experience.</li>
       <li>Designed a reusable component-based architecture adopted across ongoing projects, streamlining new-feature development for the entire team.</li>
-      <li>Leveraged AI-assisted tools (Claude, ChatGPT/Codex) to accelerate debugging and code reviews, cutting turnaround time on routine bug fixes.</li>
       <li>Collaborated in a cross-functional Agile team of 4 — participating in sprint planning, standups, and code reviews to consistently deliver features on schedule.</li>
     </ul>
   </div>
@@ -447,9 +471,9 @@
       <div class="project-subtitle">Project Management & Employee Tracking</div>
       <p class="project-desc">A real-time employee tracking system enabling teams to manage tasks, timesheets, and progress monitoring through an intuitive dashboard interface.</p>
       <ul class="project-highlights">
-        <li>API-driven data flow between frontend and backend, ensuring consistent real-time state across task and employee records.</li>
-        <li>Reusable dashboard components for task status and employee activity, reducing manual status-check overhead for managers.</li>
-        <li>Live progress monitoring with state managed across multiple concurrent users.</li>
+        <li>Built full-stack with React and Node.js — handling everything from dashboard UI to API endpoints and database operations.</li>
+        <li>Designed and implemented REST API routes for task management, employee records, and real-time progress tracking.</li>
+        <li>Reusable dashboard components and optimized database queries ensuring smooth performance across concurrent users.</li>
       </ul>
     </div>
     <div class="project-card reveal">
@@ -457,9 +481,29 @@
       <div class="project-subtitle">Event Management System</div>
       <p class="project-desc">A scalable event lifecycle platform covering end-to-end flows: registration, payments, hotel booking, and invoice generation.</p>
       <ul class="project-highlights">
-        <li>Integrated Razorpay and QR-based payment verification alongside manual verification workflows — three complete payment methods in one flow.</li>
-        <li>Fully responsive UI tested across mobile and desktop breakpoints, ensuring a consistent experience on any device.</li>
-        <li>Modular architecture enabling rapid addition of new event types and booking categories.</li>
+        <li>Full-stack event platform handling registration flows, payment processing (Razorpay), hotel bookings, and automated invoice generation.</li>
+        <li>Built robust backend APIs for event CRUD operations, user authentication, and transactional workflows with MongoDB.</li>
+        <li>Responsive React frontend tested across mobile and desktop, delivering a consistent experience on any device.</li>
+      </ul>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-name">Employee Management System</div>
+      <div class="project-subtitle">Personal Project</div>
+      <p class="project-desc">A full-stack employee management application with separate Admin and User roles, enabling role-based access control for efficient workforce management.</p>
+      <ul class="project-highlights">
+        <li>Admin panel supports complete CRUD operations — add, edit, and delete employee records — with real-time form validation and instant UI feedback.</li>
+        <li>Developed RESTful API backend using Node.js and Express.js with structured endpoints for employee listing and record management.</li>
+        <li>Designed and managed a relational PostgreSQL database schema for role-based users and employee records, using parameterised queries to prevent SQL injection.</li>
+      </ul>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-name">Todo List Application</div>
+      <div class="project-subtitle">Personal Project</div>
+      <p class="project-desc">A responsive task management app with full CRUD functionality — create, read, update, and delete tasks — built with React.js and Tailwind CSS.</p>
+      <ul class="project-highlights">
+        <li>Implemented local state management with React Hooks (useState, useEffect) for task creation, inline editing, completion toggling, and deletion.</li>
+        <li>Designed a minimal and mobile-first interface with real-time task filtering (All, Active, Completed) for improved usability.</li>
+        <li>Optimized performance with clean component architecture and efficient state updates without page reloads.</li>
       </ul>
     </div>
   </div>
@@ -472,7 +516,7 @@
     <div>
       <div class="edu-degree">B.E., Computer Science and Engineering</div>
       <div class="edu-college">St. Xavier's Catholic College of Engineering</div>
-      <div class="edu-meta"><span class="edu-badge">Graduated Aug 2023</span><span class="edu-badge">Score: 86.4%</span></div>
+      <div clas s="edu-meta"><span class="edu-badge">Graduated Aug 2023</span><span class="edu-badge">Score: 86.4%</span></div>
     </div>
   </div>
 </section>
@@ -496,10 +540,10 @@
         </div>
         <div>
           <div class="rb-title">Vaishak T S — Resume</div>
-          <div class="rb-sub">Vaishak_T S_Resume.pdf · React Frontend Developer</div>
+          <div class="rb-sub">Vaishak_Updated_Resume.pdf · Full Stack Developer</div>
         </div>
       </div>
-      <a href="./Vaishak_T_S_Resume.pdf"  target="_blank" download="Vaishak_T_S_Resume.pdf" class="btn-download"  >
+      <a href="./Vaishak_Updated_Resume.pdf"  target="_blank" download="Vaishak_Updated_Resume.pdf" class="btn-download"  >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
       </a>
